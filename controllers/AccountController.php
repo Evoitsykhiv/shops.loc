@@ -7,6 +7,6 @@ class AccountController
         echo "страничка входа";
     }
     public function registerAction(){
-        echo "страничка входа";
+        echo "страничка регистрации";
     }
 }

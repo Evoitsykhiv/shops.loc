@@ -47,8 +47,9 @@ class Router
               $action = $this->params['action'].'Action';
               if(method_exists($path, $action)){
                   $controller = new $path;
-
                   $controller->$action();
+              } else{
+                  echo 'Action не найден: '.$action;
               }
           }else{
               echo 'Контролер не найден: '.$path;
