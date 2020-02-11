@@ -3,10 +3,12 @@
 
 namespace controllers;
 
+use core\Controller;
 
-class MainController
+class MainController extends Controller
 {
+
     function indexAction(){
-        echo 'Я клас Main';
+        $this->view->render("Главная страница");
     }
 }

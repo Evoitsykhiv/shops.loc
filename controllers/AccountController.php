@@ -1,12 +1,17 @@
 <?php
 namespace controllers;
 
-class AccountController
+use core\Controller;
+
+class AccountController extends Controller
 {
+
     public function loginAction(){
-        echo "страничка входа";
+        $this->view->render("Вход");
     }
+
+
     public function registerAction(){
-        echo "страничка регистрации";
+        $this->view->render("Регистрация");
     }
 }
